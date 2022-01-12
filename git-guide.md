@@ -17,6 +17,10 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
   - Add file contents to the index. If you want to make changes in the next commit must run `git add` again.
   - `git add`
 - rm
+  - Remove files from the working tree and from the index. 
+    - Will not remove a file from your working directory. 
+    - The files being removed have to be indentical to the tip of the branch, and no updates. 
+  - `git rm`
 - commit
 - push
 - fetch
