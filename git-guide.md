@@ -11,7 +11,11 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
     - list of files in local folder that have changes that need to be committed
   - `git status`
 - clone
+  - Clone a repository into a new directory 
+  - ' git clone'
 - add
+  - Add file contents to the index 
+  - ' git add '
 - rm
 - commit
 - push
