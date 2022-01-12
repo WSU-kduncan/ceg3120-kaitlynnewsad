@@ -12,10 +12,10 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
   - `git status`
 - clone
   - Clone a repository into a new directory 
-  - 'git clone'
+  - `git clone`
 - add
-  - Add file contents to the index. If you want to make changes in the next commit must run 'git add' again.
-  - 'git add'
+  - Add file contents to the index. If you want to make changes in the next commit must run `git add` again.
+  - `git add`
 - rm
 - commit
 - push
