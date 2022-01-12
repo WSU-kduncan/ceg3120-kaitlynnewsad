@@ -8,8 +8,7 @@ In your repo for this course, create a file named git-guide.md. In this file, wr
         - list of files in local folder than are NOT being tracked by git
         - list of files in local folder that have changes that need to be committed
 ```
-    - git status
-```
+    - git status ```
 - clone
 - add
 - rm
