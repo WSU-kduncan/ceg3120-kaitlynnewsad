@@ -46,7 +46,7 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
 - checkout
   - Switch branches or restore working tree files
   - Updates files in the working tree to match the version in the index or the specified tree
-  -`git checkout`
+  - `git checkout`
 
 
 ## git files & folders
@@ -56,6 +56,8 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
   - Also contains a log that stores the commit history.
   - `cd .git`
 - .gitignore file
+  -  A text file that tells Git which files or folders to ignore in a project
+  -  `cd gitignore`
 
 ## GitHub
 
