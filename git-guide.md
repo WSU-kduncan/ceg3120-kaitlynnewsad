@@ -22,6 +22,8 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
     - The files being removed have to be indentical to the tip of the branch, and no updates. 
   - `git rm`
 - commit
+- Record the chnages to your repository. Use this after the `git add`
+- `git commit`
 - push
 - fetch
 - merge
