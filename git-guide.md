@@ -32,14 +32,29 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
   - Can fetch from either a single named repository or URL
   - `git fetch`
 - merge
+  - Join two or more development histories together
+  - Is used by 'git pull' to incorporate changes from another repository and can be used by hand to merge changes from one branch into another.
+  - `git merge`
 - pull
+  - Fetch from and integrate with another repository or a local branch
+  - `git pull` runs `git fetch` with the given parameters and then depending on configuration options or command line flags
+  - `git pull`
 - branch
+  - List, create, or delete branches
+  - `--list`: shows existing branches
+  - `git branch`
 - checkout
+  - Switch branches or restore working tree files
+  - Updates files in the working tree to match the version in the index or the specified tree
+  -`git checkout`
 
 
 ## git files & folders
 
 - .git folder
+  - Contains all information that is necessary for the project and all information relating commits, remote repository address.
+  - Also contains a log that stores the commit history.
+  - `cd .git`
 - .gitignore file
 
 ## GitHub
