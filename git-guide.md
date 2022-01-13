@@ -22,10 +22,15 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
     - The files being removed have to be indentical to the tip of the branch, and no updates. 
   - `git rm`
 - commit
-- Record the chnages to your repository. Use this after the `git add`
-- `git commit`
+  - Record the chnages to your repository. Use this after the `git add`
+  - `git commit`
 - push
+  - Update remote refs along with associated objects
+  - `git push`
 - fetch
+  - Download objects and refs from another repository
+  - Can fetch from either a single named repository or URL
+  - `git fetch`
 - merge
 - pull
 - branch
