@@ -57,7 +57,7 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
   - `cd .git`
 - .gitignore file
   -  A text file that tells Git which files or folders to ignore in a project
-  -  `cd gitignore`
+  -  Cannot `cd gitignore`
 
 ## GitHub
 
