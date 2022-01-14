@@ -63,11 +63,11 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
 
 - Pull requests
   - Tells others chnages you have made with with the repository.
-  - [How Pull Request Sample] (https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users)
+  - How To Request a Pull: (https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users)
 - SSH authentication to repositories
   - SSH key is an alternate way to identify yourself that doesn't require you to enter you username and password every time
   - SSH keys come in pairs, a public key that gets shared with services like GitHub, and a private key that is stored only on your computer. If the keys match,   you're granted access.
-  - [How To Create a SSH Key] https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys.html
+  - How to Create a SSH Key: https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys.html
 
 
 ## Resources
