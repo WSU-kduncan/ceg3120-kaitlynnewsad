@@ -12,18 +12,18 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
   - `git status`
 - clone
   - Clone a repository into a new directory 
-  - `git clone`
+  - `git clone URL`
 - add
   - Add file contents to the index. If you want to make changes in the next commit must run `git add` again.
-  - `git add`
+  - `git add [filename]`
 - rm
   - Remove files from the working tree and from the index. 
     - Will not remove a file from your working directory. 
     - The files being removed have to be indentical to the tip of the branch, and no updates. 
-  - `git rm`
+  - `git rm [filename]`
 - commit
   - Record the chnages to your repository. Use this after the `git add`
-  - `git commit`
+  - `git commit` or `git commit -m "commit message`
 - push
   - Update remote refs along with associated objects
   - `git push`
@@ -46,7 +46,7 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
 - checkout
   - Switch branches or restore working tree files
   - Updates files in the working tree to match the version in the index or the specified tree
-  - `git checkout`
+  - `git checkout ＜branchname＞`
 
 
 ## git files & folders
@@ -57,7 +57,7 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
   - `cd .git`
 - .gitignore file
   -  A text file that tells Git which files or folders to ignore in a project
-  -  Cannot `cd gitignore`
+  -  Cannot do `cd gitignore`
 
 ## GitHub
 
