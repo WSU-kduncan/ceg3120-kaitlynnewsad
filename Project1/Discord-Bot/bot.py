@@ -1,3 +1,4 @@
+
 import os
 
 import discord
@@ -26,6 +27,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+<<<<<<< HEAD
     if message.author == client.user:
         return
 
@@ -52,3 +54,5 @@ async def on_message(message):
 
 client.run(TOKEN)
 
+=======
+>>>>>>> e5bac55ff0c5f86fd8eda835bc1d0d5a7110667f
