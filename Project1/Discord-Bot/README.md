@@ -8,10 +8,15 @@
   - Where did you put the API token ?
     
     I put the API token in a file called .env. I had to use the code provided in the Discord Bot guide to get it to work.
+    
     Example: 
+    
    `# .env
+   
     DISCORD_TOKEN={your-bot-token}
+    
     DISCORD_GUILD={your-guild-name}`
+    
     Note: Had to use `git rm --cached filename` before putting .env on Github. If not the token would be killed by Discord.
     
   - What packages needed to be installed to run the code?
