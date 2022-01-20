@@ -23,10 +23,12 @@
   - Commands I can type into Discord 
   
     Hello! How are you.
+    
     What bear is best? (Office Tv show)
   
   - Response by Bot 
  
     Hi, I'm great. How are you.
+    
     Thats a ridculous question. Its debatable. There are basically two schools of thought-- (Office Tv show)
 
