@@ -41,7 +41,7 @@
   
    - How could you have the program always running.
    
-    One solution is hosting the program on a server. This would work because the server will wait for the computer/user to respond and will provide a response.
-    The server will never shutdown unless a problem and the server needs to be fixed or the user needs to make chnages to the program the user is using. 
+      One solution is hosting the program on a server. This would work because the server will wait for the computer/user to respond and will provide a response.
+      The server will never shutdown unless a problem and the server needs to be fixed or the user needs to make chnages to the program the user is using. 
     
 
