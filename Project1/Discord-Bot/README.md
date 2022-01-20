@@ -25,6 +25,11 @@
     -  Also had to install both python3 and pip3. Could not use regular python kept getting syntax error when I tried running the code.
 
 - Usage 
+  - Changed made to code
+
+    Change the code so it could output different quotes then the ones provide. 
+    The program can output two reponese.
+    
   - Commands I can type into Discord 
   
     Hello! How are you.
@@ -43,5 +48,10 @@
    
       One solution is hosting the program on a server. This would work because the server will wait for the computer/user to respond and will provide a response.
       The server will never shutdown unless a problem and the server needs to be fixed or the user needs to make chnages to the program the user is using. 
+      
+   - Proof of Bot and Output quote
+   
+      
+  - Proof of Branch
     
 
