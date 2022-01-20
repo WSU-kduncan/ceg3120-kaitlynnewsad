@@ -12,16 +12,16 @@
     DISCORD_GUILD={your-guild-name}`
     Note: Had to use `git rm --cached filename` before putting .env on Github. If not the token would be killed by Discord.
     
- - What packages needed to be installed to run the code?
+  - What packages needed to be installed to run the code?
     -  `pip3 install -U discord.py`
     -  `pip3 install -U python-dotenv`
     -  Also had to install both python3 and pip3. Could not use regular python kept getting syntax error when I tried running the code.
 
 - Usage 
- - Commands I can type into Discord 
+  - Commands I can type into Discord 
   Hello! How are you.
   What bear is best? (Office Tv show)
   
- - Response by Bot 
+  - Response by Bot 
  Hi, I'm great. How are you.
 
