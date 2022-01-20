@@ -2,9 +2,11 @@
 
 - Setup 
   - How did you get API token ?
+     
      I got the API token by creating a bot that for the application I created in Discord. After, I created my sever I addded the bot to the server. Then I went to the bot section   of my apllication and found the token section. I then copied the token. 
     
   - Where did you put the API token ?
+    
     I put the API token in a file called .env. I had to use the code provided in the Discord Bot guide to get it to work.
     Example: 
    `# .env
@@ -19,9 +21,11 @@
 
 - Usage 
   - Commands I can type into Discord 
+  
   Hello! How are you.
   What bear is best? (Office Tv show)
   
   - Response by Bot 
+ 
  Hi, I'm great. How are you.
 
