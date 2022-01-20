@@ -49,11 +49,7 @@
       One solution is hosting the program on a server. This would work because the server will wait for the computer/user to respond and will provide a response.
       The server will never shutdown unless a problem and the server needs to be fixed or the user needs to make chnages to the program the user is using. 
       
-   - Proof of Bot and Output quote
+   - Proof of Bot and Output 
+   
    ![Proof of Bot and Output](https://user-images.githubusercontent.com/56359938/150377598-418895f0-5a47-4e14-b008-4ce568b57cf3.png)
-
-
-      
-  - Proof of Branch
-    
 
