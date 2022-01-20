@@ -9,7 +9,7 @@
     
     I put the API token in a file called .env. I had to use the code provided in the Discord Bot guide to get it to work.
     
-    Example: 
+  Example: 
     
    `# .env
    
