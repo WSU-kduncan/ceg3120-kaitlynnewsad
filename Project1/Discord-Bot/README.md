@@ -50,7 +50,8 @@
       The server will never shutdown unless a problem and the server needs to be fixed or the user needs to make chnages to the program the user is using. 
       
    - Proof of Bot and Output quote
-   
+   ![Proof of Bot and Output](https://user-images.githubusercontent.com/56359938/150377204-0986ef79-7037-4a57-bec1-24e9299b9e56.png)
+
       
   - Proof of Branch
     
