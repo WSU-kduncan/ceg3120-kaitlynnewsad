@@ -28,7 +28,8 @@
   - Changed made to code
 
     Change the code so it could output different quotes then the ones provide. 
-    The program can output two reponese.
+    
+    The program can output two quotes.
     
   - Commands I can type into Discord 
   
