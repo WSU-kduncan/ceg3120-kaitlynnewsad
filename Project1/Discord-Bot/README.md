@@ -34,16 +34,21 @@
   - Commands I can type into Discord 
 
     Right Now the code works when the user enters this:
+    
     Hello! How are you.
     
     The user can input his quote if the office_quote is used:
+    
     What bear is best?  (Office Tv show)
   
   - Response by Bot 
+  - 
     The program will output this sentence:
+    
     Hi, I'm great. How are you.
     
     If the program is using office_quotes then the program will output this:
+    
     Thats a ridculous question. Its debatable. There are basically two schools of thought--  (Office Tv show)
    
  - Research
