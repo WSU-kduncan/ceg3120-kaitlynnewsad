@@ -1,28 +1,28 @@
 # Part 1 - Build a VPC
 
 1. Create a VPC
-- Specify a /24 private IP address range
+  - Specify a /24 private IP address range
 
 2. Create a subnet
-- Specify a /28 private IP address range
-- Attach it to your VPC
+  - Specify a /28 private IP address range
+  - Attach it to your VPC
 3. Create an internet gateway
-- Attach it to your VPC
+  - Attach it to your VPC
 4. Create a route table
-- Attach it to your VPC
-- Associate it with your subnet
-- Add a routing table rule that sends traffic to all destinations to your internet gateway
+  - Attach it to your VPC
+  - Associate it with your subnet
+  - Add a routing table rule that sends traffic to all destinations to your internet gateway
 
 5. Create a security group
-- Allow SSH for a set of trusted networks including:
-  - Your home / where you usually connect to your instances from
-  - Wright State (addresses starting with 130.108)
-  - Instances within the VPC
+  - Allow SSH for a set of trusted networks including:
+    - Your home / where you usually connect to your instances from
+    - Wright State (addresses starting with 130.108)
+    - Instances within the VPC
 
 # Part 2 - EC2 instances
 1. Create a new instance. 
-- AMI selected
-- Instance type selected
+  - AMI selected
+  - Instance type selected
 
 2. Attach the instance to your VPC. As discussed there are different pathways to doing this. Say how you did it.
 
