@@ -39,8 +39,9 @@ Note: Did not create a key pair used run I had a;ready created called ceg3120-aw
 1. Create a new instance. 
     - AMI selected
     - Instance type selected
-   I clicked on lanuch instances on the EC2 dashboard. I then choose Ubuntu Server 20.04 LTS (HVM), SSD Volume Type (64 bit x86) 
-   and then choose t2.micro on the next page.
+   
+ I clicked on lanuch instances on the EC2 dashboard. I then choose Ubuntu Server 20.04 LTS (HVM), SSD Volume Type (64 bit x86) 
+  and then choose t2.micro on the next page.
 
 2. Attach the instance to your VPC. As discussed there are different pathways to doing this. Say how you did it.
     To attach the instance to the VPC on tye next page it shows network details. Under the network I attached the Newsad-VPC to the instance.
