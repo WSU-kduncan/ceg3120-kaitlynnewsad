@@ -13,6 +13,8 @@
 
 3. Create an internet gateway
     - Attach it to your VPC
+    ![Screenshot 2022-02-09 144434](https://user-images.githubusercontent.com/56359938/153285523-9a865bd3-098b-4519-bf96-7b752a53d05d.png)
+
 4. Create a route table
     - Attach it to your VPC
     - Associate it with your subnet
