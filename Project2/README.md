@@ -2,10 +2,15 @@
 
 1. Create a VPC
     - Specify a /24 private IP address range
+      - 10.0.0.0/24
+![Screenshot 2022-02-09 142617](https://user-images.githubusercontent.com/56359938/153285381-aa9dea90-9239-4c9d-ac12-8d47817a8672.png)
 
 2. Create a subnet
     - Specify a /28 private IP address range
     - Attach it to your VPC
+        - 10.0.0.0/28
+ ![Screenshot 2022-02-09 142748](https://user-images.githubusercontent.com/56359938/153285443-282ee7f9-6bc9-439a-aaaa-f545d197efcf.png)
+
 3. Create an internet gateway
     - Attach it to your VPC
 4. Create a route table
