@@ -20,33 +20,57 @@
     - Attach it to your VPC
     - Associate it with your subnet
     - Add a routing table rule that sends traffic to all destinations to your internet gateway
+ ![Screenshot 2022-02-09 143851](https://user-images.githubusercontent.com/56359938/153285644-96dd84f9-8b64-4606-a339-c7b19c261fa8.png)
+
 
 5. Create a security group
     - Allow SSH for a set of trusted networks including:
       - Your home / where you usually connect to your instances from
       - Wright State (addresses starting with 130.108)
       - Instances within the VPC
+![Screenshot 2022-02-09 144434](https://user-images.githubusercontent.com/56359938/153285683-1acbd0c0-4ae9-408f-bf96-74cd7a831c22.png)
+- Inbound Rules 
+![Screenshot 2022-02-09 144513](https://user-images.githubusercontent.com/56359938/153285755-fac30252-e227-4c7c-ba79-dd70cb01da1d.png)
 
-# Part 2 - EC2 instances
+Note: Did not create a key pair used run I had a;ready created called ceg3120-aws-vm.pem.
+
+# Part 2 
+- EC2 instances
 1. Create a new instance. 
     - AMI selected
     - Instance type selected
+   I clicked on lanuch instances on the EC2 dashboard. I then choose Ubuntu Server 20.04 LTS (HVM), SSD Volume Type (64 bit x86) 
+   and then choose t2.micro on the next page.
 
 2. Attach the instance to your VPC. As discussed there are different pathways to doing this. Say how you did it.
+    To attach the instance to the VPC on tye next page it shows network details. Under the network I attached the Newsad-VPC to the instance.
+    This also caused the subnet to be attached to the instance now.
+    
+![Screenshot 2022-02-09 151856](https://user-images.githubusercontent.com/56359938/153286694-c9a34e0b-7f29-40cb-b3cf-42cd2b36bfeb.png)
 
 3. Determine whether a Public IPv4 address will be auto-assigned to the instance. Justify your choice to do so (or not do so)
-
+   The subnet causes diables an auto IP address to be assinged. We have to use a Elastic IP which allows us to remmap the address to other 
+   instance in the VPC. 
+   
 4. Attach a volume to your instance. As discussed there are different pathways to doing this. Say how you did it.
+    In the next step of creating the instance I had to select a volum to add. I stuck with the deafult and did SSD (gp2).
 
 5. Tag your instance with a "Name" of "YOURLASTNAME-instance". Say how you did it.
+    The next step showed tagging the instance I choose the name Newsad-instance for both the value and name. 
 
 6. Associate your security group, "YOURLASTNAME-sg" to your instance. Say how you did it.
+    In the next page I clicked on existing secuirty group and choose the ones I created called Newsad-sg.
 
 7. Reserve an Elastic IP address. Tag it with "YOURLASTNAME-EIP". Associate the Elastic IP with your instance. Say how you did it.
+    Under Network Settings on the side of the page clicked on Elastic IP. Then clicked on Allocate Elastic IP address and added
+    a tag to this IP called Newsad-EPI. Then I clicked on Action then Assoacite Elastic IP and associated the this IP to the instance we created. 
 
 8. Create a screenshot your instance details and add it to your project write up.
+![Screenshot 2022-02-09 152150](https://user-images.githubusercontent.com/56359938/153288081-22ccc02f-3d3d-4554-bf0d-14a4cb7e2dbc.png)
+
 
 9. ssh in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
+Used the command ssh -i /home/knewsad/ceg3120-aws-vm.pem ubuntu@54.156.184.132.
 
 10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname.
 
