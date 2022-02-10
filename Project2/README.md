@@ -34,7 +34,7 @@
 
 
 
-Note: Did not create a key pair used run I had a;ready created called ceg3120-aws-vm.pem.
+Note: Did not create a key pair used run I had already created one called ceg3120-aws-vm.pem.
 
 # Part 2 
 - EC2 instances
