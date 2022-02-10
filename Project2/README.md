@@ -45,7 +45,7 @@ Note: Did not create a key pair used run I had already created one called ceg312
   and then choose t2.micro on the next page.
 
 2. Attach the instance to your VPC. As discussed there are different pathways to doing this. Say how you did it.
-3. 
+
     To attach the instance to the VPC on tye next page it shows network details. Under the network I attached the Newsad-VPC to the instance.
     This also caused the subnet to be attached to the instance now.
     
@@ -70,7 +70,7 @@ Note: Did not create a key pair used run I had already created one called ceg312
 
 7. Reserve an Elastic IP address. Tag it with "YOURLASTNAME-EIP". Associate the Elastic IP with your instance. Say how you did it.
 
-    Under Network Settings on the side of the page clicked on Elastic IP. Then clicked on Allocate Elastic IP address and added
+   Under Network Settings on the side of the page clicked on Elastic IP. Then clicked on Allocate Elastic IP address and added
     a tag to this IP called Newsad-EPI. Then I clicked on Action then Assoacite Elastic IP and associated the this IP to the instance we created. 
 
 8. Create a screenshot your instance details and add it to your project write up.
@@ -78,10 +78,11 @@ Note: Did not create a key pair used run I had already created one called ceg312
 
 
 9. ssh in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
-Used the command ssh -i /home/knewsad/ceg3120-aws-vm.pem ubuntu@54.156.184.132.
-Change host name by typing sudo hostnamectl set-hostname Newsad-UbuntuAMI
+    Used the command ssh -i /home/knewsad/ceg3120-aws-vm.pem ubuntu@54.156.184.132.
+    Change host name by typing sudo hostnamectl set-hostname Newsad-UbuntuAMI
+    ![Screenshot 2022-02-10 104825](https://user-images.githubusercontent.com/56359938/153444818-138ea12a-1988-4785-9257-0466e56273a0.png)
 
-
+  
 10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname.
 ![Screenshot 2022-02-10 104740](https://user-images.githubusercontent.com/56359938/153444319-29c7315b-90ec-4de4-bbbc-ff1edb4b96c1.png)
 
