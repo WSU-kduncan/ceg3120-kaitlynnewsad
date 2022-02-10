@@ -30,7 +30,9 @@
       - Instances within the VPC
 ![Screenshot 2022-02-09 144434](https://user-images.githubusercontent.com/56359938/153285683-1acbd0c0-4ae9-408f-bf96-74cd7a831c22.png)
 - Inbound Rules 
-![Screenshot 2022-02-09 144513](https://user-images.githubusercontent.com/56359938/153285755-fac30252-e227-4c7c-ba79-dd70cb01da1d.png)
+![Screenshot 2022-02-10 091909](https://user-images.githubusercontent.com/56359938/153427174-5c48790b-a574-4320-b724-5900ec6a0880.png)
+
+
 
 Note: Did not create a key pair used run I had a;ready created called ceg3120-aws-vm.pem.
 
