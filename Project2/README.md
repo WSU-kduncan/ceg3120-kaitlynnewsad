@@ -30,8 +30,7 @@
       - Instances within the VPC
 ![Screenshot 2022-02-09 144434](https://user-images.githubusercontent.com/56359938/153285683-1acbd0c0-4ae9-408f-bf96-74cd7a831c22.png)
 - Inbound Rules 
-![Screenshot 2022-02-10 091909](https://user-images.githubusercontent.com/56359938/153427174-5c48790b-a574-4320-b724-5900ec6a0880.png)
-
+![Screenshot 2022-02-10 104212](https://user-images.githubusercontent.com/56359938/153444544-2420c90f-585e-4403-ae8b-a9b311773dfb.png)
 
 
 Note: Did not create a key pair used run I had already created one called ceg3120-aws-vm.pem.
@@ -79,10 +78,12 @@ Note: Did not create a key pair used run I had already created one called ceg312
 
 
 9. ssh in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
-
 Used the command ssh -i /home/knewsad/ceg3120-aws-vm.pem ubuntu@54.156.184.132.
+Change host name by typing sudo hostnamectl set-hostname Newsad-UbuntuAMI
+
 
 10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname.
+![Screenshot 2022-02-10 104740](https://user-images.githubusercontent.com/56359938/153444319-29c7315b-90ec-4de4-bbbc-ff1edb4b96c1.png)
 
 Note: You may delete all created resources once done to save monies. No really, trash it - especially the instance and disassociate and release the elastic ip
 
