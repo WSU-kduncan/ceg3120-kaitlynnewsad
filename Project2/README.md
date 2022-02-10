@@ -73,7 +73,7 @@ Note: Did not create a key pair used run I had a;ready created called ceg3120-aw
     a tag to this IP called Newsad-EPI. Then I clicked on Action then Assoacite Elastic IP and associated the this IP to the instance we created. 
 
 8. Create a screenshot your instance details and add it to your project write up.
-![Screenshot 2022-02-09 152150](https://user-images.githubusercontent.com/56359938/153288081-22ccc02f-3d3d-4554-bf0d-14a4cb7e2dbc.png)
+![Screenshot 2022-02-10 085620](https://user-images.githubusercontent.com/56359938/153423101-eb081197-8c24-43ac-b440-5e6b9e3b8fb9.png)
 
 
 9. ssh in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
