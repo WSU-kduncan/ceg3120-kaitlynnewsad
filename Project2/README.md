@@ -62,7 +62,7 @@ Note: Did not create a key pair used run I had already created one called ceg312
 
 5. Tag your instance with a "Name" of "YOURLASTNAME-instance". Say how you did it.
 
-    The next step showed tagging the instance I choose the name Newsad-instance for both the value and name. 
+    The next step was adding a tag with wth in the name section of tags adding Newsad-instance.
 
 6. Associate your security group, "YOURLASTNAME-sg" to your instance. Say how you did it.
 
