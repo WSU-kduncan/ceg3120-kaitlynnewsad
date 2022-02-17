@@ -1,6 +1,7 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
-  Testing area for AWS: This template builds a linux VM for CEG 2350 @ WSU.
+  Testing area for AWS: Newsad CF Template to create a VPC, allow 
+  SSH access from trusted networks, and create a single instance with an Elastic IP address.
 Parameters:
   KeyName:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
@@ -21,14 +22,14 @@ Mappings:
   AWSRegionUbuntu: # AMI for Ubuntu server in each supported region 
     us-east-1:   # N. Virginia
       PV64: NOT_SUPPORTED
-      HVM64: ami-07d0cf3af28718ef8
+      HVM64: ami-09e67e426f25ce0d7 #Ubuntu Server 20.04
       HVMG2: NOT_SUPPORTED
 Resources:
   VPC:
     Type: 'AWS::EC2::VPC'
     Properties:
-      CidrBlock: 10.0.0.0/16
-      Tags:
+      CidrBlock: 10.0.0.0/24
+      Tags: Newsad-CF-VPC
         - Key: Application
           Value: !Ref 'AWS::StackId'
         - Key: Name
@@ -37,8 +38,8 @@ Resources:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: !Ref VPC
-      CidrBlock: 10.0.0.0/24
-      Tags:
+      CidrBlock: 10.0.0.0/28
+      Tags: Newsad-CF-Subnet
         - Key: Application
           Value: !Ref 'AWS::StackId'
   InternetGateway:
@@ -86,7 +87,7 @@ Resources:
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
-          CidrIp: !Ref SSHLocation
+          CidrIp: 98.29.7.198/32 # Home Network
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
@@ -94,7 +95,7 @@ Resources:
         - IpProtocol: -1
           FromPort: '-1'
           ToPort: '-1'
-          CidrIp: 10.0.0.0/24
+          CidrIp: 10.0.0.0/24 #VPC
         - IpProtocol: tcp
           FromPort: '1'
           ToPort: '65535'
@@ -115,7 +116,7 @@ Resources:
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
-        - Key: Name
+        - Key: Newsad-CF-instance
           Value: CEG2350 Ubuntu
       NetworkInterfaces:
         - GroupSet:
@@ -124,12 +125,14 @@ Resources:
           DeviceIndex: '0'
           DeleteOnTermination: 'true'
           SubnetId: !Ref Subnet
-          PrivateIpAddress: 10.0.0.25
+          PrivateIpAddress: 10.0.0.10
       UserData:
         Fn::Base64:
           !Sub |
             #!/bin/bash -xe
             apt-get update && \
             apt-get install -y \
-              replace-me && \
+              git && \
+              python3 && \
+              pip3
             reboot
