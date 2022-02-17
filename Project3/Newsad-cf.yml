@@ -130,6 +130,7 @@ Resources:
         Fn::Base64:
           !Sub |
             #!/bin/bash -xe
+            sudo hostnamectl set-hostname cf-instance
             apt-get update && \
             apt-get install -y \
               git && \
