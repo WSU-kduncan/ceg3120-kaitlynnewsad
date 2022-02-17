@@ -29,18 +29,18 @@ Resources:
     Type: 'AWS::EC2::VPC'
     Properties:
       CidrBlock: 10.0.0.0/24
-      Tags: Newsad-CF-VPC
+      Tags: 
         - Key: Application
           Value: !Ref 'AWS::StackId'
-        - Key: Name
+        - Key: Newsad-CF-VPC
           Value: CEG2350 VPC
   Subnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: !Ref VPC
       CidrBlock: 10.0.0.0/28
-      Tags: Newsad-CF-Subnet
-        - Key: Application
+      Tags: 
+        - Key: Newsad-CF-Subnet
           Value: !Ref 'AWS::StackId'
   InternetGateway:
     Type: 'AWS::EC2::InternetGateway'
