@@ -32,15 +32,15 @@ Resources:
       Tags: 
         - Key: Application
           Value: !Ref 'AWS::StackId'
-        - Key: Newsad-CF-VPC
-          Value: CEG2350 VPC
+        - Key: Name
+          Value: Newsad-CF-VPC
   Subnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: !Ref VPC
       CidrBlock: 10.0.0.0/28
       Tags: 
-        - Key: Newsad-CF-Subnet
+        - Key: Application
           Value: !Ref 'AWS::StackId'
   InternetGateway:
     Type: 'AWS::EC2::InternetGateway'
@@ -116,8 +116,8 @@ Resources:
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
-        - Key: Newsad-CF-instance
-          Value: CEG2350 Ubuntu
+        - Key: Name
+          Value: CF-instannce
       NetworkInterfaces:
         - GroupSet:
             - !Ref Lab1SecurityGroup
@@ -130,10 +130,11 @@ Resources:
         Fn::Base64:
           !Sub |
             #!/bin/bash -xe
-            sudo hostnamectl set-hostname cf-instance
+            
             apt-get update && \
             apt-get install -y \
               git && \
               python3 && \
               pip3
+              sudo hostnamectl set-hostname cf-instance
             reboot
