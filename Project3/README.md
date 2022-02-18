@@ -1,10 +1,10 @@
-1.Description:
+1. Description:
 
  Modify Description string to state that this is your template and creates the following
  Example description:
    Duncan CF Template to create a VPC, allow SSH access from trusted networks, and create a single instance with an Elastic IP address
 
-2.Mappings:
+2. Mappings:
 
 Adjust AMI to be the AMI of your choice
 This section:
@@ -14,20 +14,20 @@ us-east-1:   # N. Virginia
   HVM64: ami-07d0cf3af28718ef8
   HVMG2: NOT_SUPPORTED
   
-3.Resources:
+3. Resources:
 
 VPC range to be /24
 Subnet range to be /28
 Tag each resource with a name - last name, cloudformation, resource: Duncan-CF-VPC
 
-4.Security Group Settings:
+4. Security Group Settings:
 
 Allow SSH for a set of trusted networks including:
 Your home / where you usually connect to your instances from
 Wright State (addresses starting with 130.108)
 Instances within the VPC
 
-5.Instance settings:
+5. Instance settings:
 
 Set "Tag" "Name" to "LastName-CF-instance"
 Set a private IP in your subnet range
