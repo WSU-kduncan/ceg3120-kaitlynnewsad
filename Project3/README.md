@@ -1,8 +1,8 @@
 1.Description:
 
- - Modify Description string to state that this is your template and creates the following
+ Modify Description string to state that this is your template and creates the following
  Example description:
- -  Duncan CF Template to create a VPC, allow SSH access from trusted networks, and create a single instance with an Elastic IP address
+   Duncan CF Template to create a VPC, allow SSH access from trusted networks, and create a single instance with an Elastic IP address
 
 2.Mappings:
 
