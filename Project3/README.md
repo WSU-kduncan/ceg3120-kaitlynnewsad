@@ -1,3 +1,5 @@
+## Directions 
+
 1. Description:
 
  Modify Description string to state that this is your template and creates the following
@@ -45,3 +47,6 @@ Anytime you see !Ref, there is a reference being made to a value defined elsewhe
 The configuration script uses some bash syntax.
 space \ \ means the command continues on a new line. Very nice for readability
 && && need to go inbetween commands. You will see space && \ && \ in between commands - again, readability
+
+## Proof Instance was created:
+![Screenshot 2022-02-21 112548](https://user-images.githubusercontent.com/56359938/154994150-b532b363-2b0c-44fe-9dc1-1f66872ed0c1.png)
