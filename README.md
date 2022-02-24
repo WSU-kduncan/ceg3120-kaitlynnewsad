@@ -9,3 +9,6 @@ Course work for CEG 3120 at Wright State University, Department of Computer Scie
 
 ## Project 2
 - Built my own private cloud network and EC2 instance.
+
+## Project 3: 
+- Create a CloudFormation to specification to remove manual creation
