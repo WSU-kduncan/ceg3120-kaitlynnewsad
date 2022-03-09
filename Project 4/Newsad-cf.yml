@@ -148,7 +148,7 @@ Resources:
           CidrIp: 0.0.0.0/0
       Tags: 
         - Key: Name
-          Value: P4-kn
+          Value: P4-sg
   ProxyInstance:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
