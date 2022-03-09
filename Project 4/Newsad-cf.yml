@@ -127,7 +127,7 @@ Resources:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
       VpcId: !Ref VPC
-      GroupDescription: Enable SSH access from trusted sources.  Port 80 or 443 access from appropriate sources
+      GroupDescription: Enable SSH access from trusted sources. Port 80 or 443 access from appropriate sources
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: '22'
@@ -148,7 +148,7 @@ Resources:
           CidrIp: 0.0.0.0/0
       Tags: 
         - Key: Name
-          Value: P4-sg
+          Value: P4-kn
   ProxyInstance:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
@@ -256,9 +256,9 @@ Resources:
             #!/bin/bash -xe
             apt-get update && \
             apt-get upgrade && \
-            # TODO need to install apache or nginx - DONE
+            # TODO need to install apache or nginx 
             apt install -y apache2 && \
             apt-get install -y git && \
-            # TODO give it a hostname - hostnamectl  && \ - DONE
+            # TODO give it a hostname - hostnamectl  && \ 
             hostnamectl set-hostname newsad-server2 && \
             reboot
