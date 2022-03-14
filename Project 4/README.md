@@ -14,7 +14,7 @@ Setup the following and add documentation or screenshots to your README.md file 
             Host webserver2
             HostName 10.0.1.12
             user ubuntu
-            IdentityFile /home/ubuntu/ceg3120-aws-vm.pem`
+            IdentityFile /home/ubuntu/ceg3120-aws-vm.pem
 
 2. Document how to SSH in between the systems utilizing their private IPs.
 
