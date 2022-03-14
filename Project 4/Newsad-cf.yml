@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
-   Creates 3 instances and 1 VPC.  Each instance gets a private IP and is pre-installed with required software. The proxy server gets a public IP as does a NAT gateway.  The backend servers use the NAT gateway for world communications, but they do not have individual public IPs.
+   Creates 3 instances and 1 VPC.  Each instance gets a private IP and is pre-installed with required software.  The proxy server gets a public IP as does a NAT gateway.  The backend servers use the NAT gateway for world communications, but they do not have individual public IPs.
 Parameters:
   KeyName:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
@@ -127,7 +127,7 @@ Resources:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
       VpcId: !Ref VPC
-      GroupDescription: Enable SSH access from trusted sources. Port 80 or 443 access from appropriate sources
+      GroupDescription: Enable SSH access from trusted sources.  Port 80 or 443 access from appropriate sources
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: '22'
@@ -141,7 +141,7 @@ Resources:
           FromPort: '22'
           ToPort: '22'
           CidrIp: 98.29.7.198/32  # Replace with home / trusted public IP
-          # TODO Need more rules for port 80 access 
+          # TODO Need more rules for port 80 access
         - IpProtocol: tcp
           FromPort: '80'
           ToPort: '80'
@@ -180,7 +180,7 @@ Resources:
           !Sub |
             #!/bin/bash -xe
             apt-get update && \
-            # TODO need to install haproxy
+            # TODO need to install haproxy 
             apt install -y haproxy && \
             apt-get install -y git python3 python3-pip && \
             hostnamectl set-hostname proxy && \
@@ -222,7 +222,7 @@ Resources:
             # TODO give it a hostname - hostnamectl  && \ - DONE
             hostnamectl set-hostname newsad-server1 && \
             reboot
-# TODO: create another webserver instance attached to the private subnet 
+# TODO: create another webserver instance attached to the private subnet
 #Webserver 2
   WebServ2Instance:
     Type: 'AWS::EC2::Instance'
@@ -256,9 +256,9 @@ Resources:
             #!/bin/bash -xe
             apt-get update && \
             apt-get upgrade && \
-            # TODO need to install apache or nginx 
+            # TODO need to install apache or nginx - DONE
             apt install -y apache2 && \
             apt-get install -y git && \
-            # TODO give it a hostname - hostnamectl  && \ 
+            # TODO give it a hostname - hostnamectl  && \ - DONE
             hostnamectl set-hostname newsad-server2 && \
             reboot
