@@ -6,7 +6,7 @@ Setup the following and add documentation or screenshots to your README.md file 
     
       Both servers .ssh/config folder. Each proxy would be:
       
-        Host webserver1
+        `Host webserver1
         HostName 10.0.1.11
         user ubuntu
         IdentityFile /home/ubuntu/ceg3120-aws-vm.pem
@@ -14,7 +14,7 @@ Setup the following and add documentation or screenshots to your README.md file 
         Host webserver2
         HostName 10.0.1.12
         user ubuntu
-        IdentityFile /home/ubuntu/ceg3120-aws-vm.pem
+        IdentityFile /home/ubuntu/ceg3120-aws-vm.pem`
 
 2. Document how to SSH in between the systems utilizing their private IPs.
 
@@ -35,7 +35,7 @@ Setup the following and add documentation or screenshots to your README.md file 
     
   - What configuration(s) were set (if any)
   
-     front proxyfront
+     `front proxyfront
      
      bind 10.0.0.10:80
      
@@ -47,7 +47,7 @@ Setup the following and add documentation or screenshots to your README.md file 
      
      server webserver1 10.0.1.11:80
      
-     server webserver2 10.0.1.12:80
+     server webserver2 10.0.1.12:80`
  
  
   - How to restart the service after a configuration change
