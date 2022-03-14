@@ -3,6 +3,7 @@ Setup the following and add documentation or screenshots to your README.md file 
 
 1. Create an /etc/hosts OR .ssh/config file on each system that correlates hostnames to private IPs.
     - Description of how file is configured
+    
       Both servers .ssh/config folder. Each proxy would be:
       
         Host webserver1
@@ -16,18 +17,24 @@ Setup the following and add documentation or screenshots to your README.md file 
         IdentityFile /home/ubuntu/ceg3120-aws-vm.pem
 
 2. Document how to SSH in between the systems utilizing their private IPs.
+
     Use the private IP, username (ubuntu), and the private key called ceg3120-aws-vm.pem.
+    
     To ssh into between the systems examples:
+    
     web server 1: ssh -i ceg3120-aws-vm.pem ubuntu@10.0.1.11
+    
     web server 2: ssh -i ceg3120-aws-vm.pem ubuntu@10.0.1.12
 
 
 3. HAProxy configuration & documentation requirements
 - How to set up a HAProxy load balancer
   - What file(s) where modified & their location
+  
     /etc/haproxy/haproxy
     
   - What configuration(s) were set (if any)
+  
         front proxyfront
         bind 10.0.0.10:80
         default_backend myservers
@@ -39,6 +46,7 @@ Setup the following and add documentation or screenshots to your README.md file 
  
  
   - How to restart the service after a configuration change
+  
     sudo systemctl restart haproxy
     
   - Resources used (websites)
@@ -49,16 +57,20 @@ Setup the following and add documentation or screenshots to your README.md file 
 4. Webserver 1 & 2 configuration & documentation requirements
 - How set up a webserver
   - What file(s) were modified & their location
+  
     /var/www/html/index.html was modified
     
   - What configuration(s) were set (if any)
+  
      The configurations were set to default default apache2 configurations.
      
   - Where site content files were located (and why)
+  
     The sites are located in the deault location called in /var/www/html/. 
     They are stored because you need to store the index.html is the default for homepage.
  
   - How to restart the service after a configuration change
+  
     sudo systemctl restart apache2
     
   - Resources used (websites)
