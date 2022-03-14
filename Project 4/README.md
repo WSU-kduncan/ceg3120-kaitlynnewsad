@@ -35,14 +35,14 @@ Setup the following and add documentation or screenshots to your README.md file 
     
   - What configuration(s) were set (if any)
   
-        front proxyfront
-        bind 10.0.0.10:80
-        default_backend myservers
+     front proxyfront
+     bind 10.0.0.10:80
+     default_backend myservers
 
-        back myservers
-        balance roundrobin
-        server webserver1 10.0.1.11:80
-        server webserver2 10.0.1.12:80
+     back myservers
+     balance roundrobin
+     server webserver1 10.0.1.11:80
+     server webserver2 10.0.1.12:80
  
  
   - How to restart the service after a configuration change
