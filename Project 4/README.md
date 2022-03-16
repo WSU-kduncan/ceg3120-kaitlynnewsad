@@ -54,6 +54,7 @@ Setup the following and add documentation or screenshots to your README.md file 
     
   - Resources used (websites)
     https://discourse.haproxy.org/t/question-about-restarting-the-service/4134
+    
     https://upcloud.com/community/tutorials/haproxy-load-balancer-ubuntu/#:~:text=Setting%20up%20HAProxy%20for%20load,cfg%20with%20the%20defining%20settings.
 
 
