@@ -52,7 +52,8 @@ Setup the following and add documentation or screenshots to your README.md file 
   
     sudo systemctl restart haproxy
     
-  - Resources used (websites)
+  - Resources used (websites):
+  
     https://discourse.haproxy.org/t/question-about-restarting-the-service/4134
     
     https://upcloud.com/community/tutorials/haproxy-load-balancer-ubuntu/#:~:text=Setting%20up%20HAProxy%20for%20load,cfg%20with%20the%20defining%20settings.
@@ -77,7 +78,8 @@ Setup the following and add documentation or screenshots to your README.md file 
   
     sudo systemctl restart apache2
     
-  - Resources used (websites)
+  - Resources used (websites):
+  
     https://ubuntu.com/server/docs/web-servers-apache
     
 5. From the browser, when connecting to the proxy server, take two screenshots.
