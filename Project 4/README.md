@@ -18,13 +18,16 @@ Setup the following and add documentation or screenshots to your README.md file 
 
 2. Document how to SSH in between the systems utilizing their private IPs.
 
-    Use the private IP, username (ubuntu), and the private key called ceg3120-aws-vm.pem.
+    Use the private IP, username (ubuntu), and the private key called ceg3120-aws-vm.pem to ssh into the proxy.
     
+    Then while in the proxy use these commands. 
     To ssh into between the systems examples:
     
     web server 1: ssh -i ceg3120-aws-vm.pem ubuntu@10.0.1.11
     
     web server 2: ssh -i ceg3120-aws-vm.pem ubuntu@10.0.1.12
+    
+    Once you have the .ssh/config is in place you can ssh proxy or ssh webserver1 instead of using the IP address.
 
 
 3. HAProxy configuration & documentation requirements
