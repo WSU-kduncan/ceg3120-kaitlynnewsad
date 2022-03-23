@@ -10,13 +10,13 @@
 
   Downloaded docker desktop. Went to terminal and changed from WSL1 to WSL2 with these commands:
  
-  wsl.exe -l -v
+      wsl.exe -l -v
   
-  wsl.exe --set-version Ubuntu-18.04 2
+      wsl.exe --set-version Ubuntu-18.04 2
   
-  wsl.exe --set-default-version 2
+      wsl.exe --set-default-version 2
   
-  wsl.exe --set-default Ubuntu-18.04
+      wsl.exe --set-default Ubuntu-18.04
   
   After making sure the dependecie was WSL2 went to Docker Desktop and made sure WSL2 was checked off. Also, go to Refrences tab and click on WSL       Integration. Make sure on the WSL Integration that you checked on WSL2 enbaled and made sure Ubuntu-18.04 was chceck off as well.
   
